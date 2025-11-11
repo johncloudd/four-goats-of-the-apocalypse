@@ -1,4 +1,26 @@
 {
-  "settingsInheritedFrom": "aayant-mend/whitesource-config@primary"
+    "scanSettings": {
+        "configMode": "LOCAL",
+        "enableLicenseViolations": "true",
+        "baseBranches": ["main", "TestingNewBranch", "PutThisOneTho"]
+    },
+    "pullRequestStatusSettings": {
+        "vulnerablePullRequestStatus": "failure",
+        "displayMode": "diff",
+        "useMendStatusNames": "true"
+    },
+    "issueSettings": {
+        "minSeverityLevel": "LOW",
+        "issueType": "DEPENDENCY"
+    },
+    "checkRunSettings": {
+        "vulnerableCheckRunConclusionLevel": "failure",
+        "displayMode": "diff",
+        "useMendCheckNames": "true"
+    },
+    "remediateSettings": {
+        "workflowRules": {
+            "enabled": false
+        }
+    }
 }
-
